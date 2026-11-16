@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frontage-pure-core"
+version = "0.1.0"
+description = "Standalone candidate of existing pure content and publication decisions"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Aleksandar Kamenev" }]
+dependencies = []
+
+[project.optional-dependencies]
+images = ["Pillow>=11,<13"]
+
+[tool.setuptools.packages.find]
+include = ["frontage", "frontage.*"]
